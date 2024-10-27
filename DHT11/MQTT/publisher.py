@@ -34,6 +34,7 @@ def get_time():
 
 # MQTT setup
 def mqtt_setup():
+    # You can use your own broker or free public broker
     # broker_ip = "192.168.0.121" #your laptop IP
     broker_ip = "test.mosquitto.org" # use the test MQTT broker
     client = MQTTClient("pico_w_client", broker_ip)
